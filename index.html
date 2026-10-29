@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Château Coffee Co. | Coffee on S Waverly Rd, Lansing, MI</title>
+<meta name="description" content="Château Coffee Co. is a small, elegant café tucked into a Lansing strip mall at 1701 S Waverly Rd. Espresso, brewed coffee, signature lattes, tea, pastries and grab-and-go breakfast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dom:#1D1D1F;
+  --acc:#F2B134;
+  --surf:#F5F5F2;
+  --ink:#111111;
+  --muted:#4a4a4c;
+  --line:rgba(242,177,52,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Archivo",Georgia,serif;color:var(--ink);background:var(--surf);line-height:1.6;font-size:1.0625rem;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Archivo Black","Archivo",Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.kicker{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor}
+.kicker.dark{color:var(--ink)}
+.kicker.dark::before{background:var(--acc)}
+.photo{position:relative;overflow:hidden;background-color:var(--dom)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.icon{width:1.25rem;height:1.25rem;flex:none}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:1rem;text-decoration:none;padding:.95rem 1.5rem;border-radius:4px;border:2px solid var(--acc);transition:transform .25s ease,box-shadow .25s ease,background-color .25s}
+.btn-gold{background:var(--acc);color:var(--ink)}
+.btn-gold:hover{box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn-ghost{background:transparent;color:var(--surf)}
+.btn-ghost:hover{background:rgba(242,177,52,.12)}
+.btn-dark{background:var(--dom);color:var(--surf);border-color:var(--dom)}
+
+/* Header */
+.site-head{background:var(--surf);border-bottom:1px solid #dcdcd6;position:sticky;top:0;z-index:50}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+.brand{display:flex;align-items:center;text-decoration:none}
+.nav{display:none;gap:1.75rem;font-weight:600;font-size:.95rem}
+.nav a{text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--acc)}
+.head-call{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;text-decoration:none;font-size:.95rem;background:var(--dom);color:var(--surf);padding:.6rem .95rem;border-radius:4px}
+@media(min-width:880px){.nav{display:flex}}
+
+/* Hero */
+.hero{background:var(--dom);color:var(--surf);position:relative;overflow:hidden}
+.hero-grid{display:grid}
+.hero-photo{aspect-ratio:4/4.3;border-radius:48vw 48vw 0 0 / 34vw 34vw 0 0;margin-top:1.25rem}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,29,31,.78) 0%,rgba(29,29,31,.25) 38%,rgba(29,29,31,0) 60%);pointer-events:none}
+.hero-text{padding:2.5rem 1.25rem 3rem;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,7.4vw,6.4rem);margin:1rem 0 1.25rem;color:var(--surf)}
+.hero .lede{max-width:34rem;color:#e4e4df;font-size:1.1rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.75rem}
+.rating{display:flex;align-items:center;gap:.6rem;margin-top:2rem;font-weight:600;color:#e4e4df;font-size:.95rem}
+.rating strong{color:var(--acc);font-family:"Archivo Black";font-size:1.4rem;font-weight:400}
+@media(min-width:960px){
+  .hero-grid{grid-template-columns:40% 60%;min-height:min(88vh,860px);align-items:center}
+  .hero-photo{grid-column:2;grid-row:1;height:100%;aspect-ratio:auto;margin-top:2.5rem;border-radius:22vw 0 0 0 / 22vw 0 0 0;align-self:stretch}
+  .hero-text{grid-column:1 / span 2;grid-row:1;padding:4rem 0 4rem max(2.5rem,calc((100vw - 1180px)/2));max-width:68vw}
+  .hero h1{max-width:12ch}
+  .hero .lede{max-width:28rem}
+}
+
+/* Story */
+.story{padding:0;background:var(--surf)}
+.story-grid{display:grid}
+.story-photo{aspect-ratio:4/3}
+.story-text{padding:3rem 1.25rem}
+.story h2{font-size:clamp(2rem,4.6vw,3.6rem);margin:1rem 0 1.25rem;max-width:16ch}
+.story p{max-width:36rem;color:var(--muted);margin-bottom:1rem}
+.pull{margin:2rem 0 0;padding:1.5rem 0 1.5rem 1.5rem;border-left:4px solid var(--acc);max-width:34rem}
+.pull p{font-family:"Archivo Black";font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.2;color:var(--ink);margin:0}
+.pull cite{display:block;margin-top:.75rem;font-style:normal;font-weight:600;font-size:.9rem;color:var(--muted)}
+@media(min-width:960px){
+  .story-grid{grid-template-columns:7fr 6fr;align-items:center}
+  .story-photo{aspect-ratio:auto;height:100%;min-height:640px}
+  .story-text{padding:5rem max(2.5rem,calc((100vw - 1180px)/2)) 5rem 4rem}
+}
+
+/* Offerings rows */
+.offer-head{background:var(--dom);color:var(--surf);padding:4rem 0 2.5rem}
+.offer-head h2{font-size:clamp(2rem,5vw,4rem);margin-top:1rem;max-width:18ch}
+.offer-head p{color:#d6d6d0;max-width:38rem;margin-top:1rem}
+.rows{background:var(--dom);color:var(--surf);padding-bottom:1rem}
+.row{display:grid;position:relative}
+.row .photo{aspect-ratio:var(--ar,4/3)}
+.row-card{background:var(--surf);color:var(--ink);padding:2rem 1.5rem;margin:-2.5rem 1.25rem 2.5rem;position:relative;z-index:2;border-top:4px solid var(--acc)}
+.row-card h3{font-size:clamp(1.6rem,3.2vw,2.6rem);margin:.6rem 0 .8rem}
+.row-card p{color:var(--muted)}
+.row-card ul{list-style:none;margin-top:1rem;display:grid;gap:.4rem}
+.row-card li{display:flex;gap:.55rem;align-items:flex-start;font-weight:500}
+.row-card li svg{color:#a87510;margin-top:.2rem;width:1.1rem;height:1.1rem}
+@media(min-width:900px){
+  .row{grid-template-columns:7fr 5fr;align-items:center;margin-bottom:3.5rem}
+  .row .photo{aspect-ratio:auto;height:var(--h,520px)}
+  .row-card{margin:0 0 0 -5rem;padding:2.75rem 2.5rem;max-width:30rem}
+  .row.flip{grid-template-columns:5fr 7fr}
+  .row.flip .photo{grid-column:2;grid-row:1}
+  .row.flip .row-card{grid-column:1;grid-row:1;margin:0 -5rem 0 auto;justify-self:end}
+}
+.inset{display:flex;gap:1rem;align-items:center;margin-top:1.25rem}
+.inset .photo{width:96px;height:96px;aspect-ratio:1/1;flex:none;border-radius:48px 48px 0 0}
+.inset p{font-size:.95rem}
+
+/* Chalkboard plaque */
+.board-sec{background:var(--surf);padding:4.5rem 0}
+.board{background:var(--dom);color:var(--surf);padding:3rem 1.5rem 2.5rem;border-radius:180px 180px 6px 6px / 120px 120px 6px 6px;outline:2px solid var(--acc);outline-offset:-14px;position:relative;max-width:900px;margin-inline:auto}
+.board h2{font-size:clamp(1.8rem,4.4vw,3.2rem);text-align:center;margin:.75rem auto 0;color:var(--surf);max-width:14ch}
+.board .kicker{display:flex;justify-content:center}
+.board .kicker::before{display:none}
+.board-intro{text-align:center;color:#d6d6d0;max-width:30rem;margin:1rem auto 2rem}
+.board-cols{display:grid;gap:2rem;padding:0 .5rem}
+.board-col h3{font-size:clamp(1.15rem,2vw,1.4rem);color:var(--acc);padding-bottom:.5rem;border-bottom:1px solid var(--line);margin-bottom:.9rem}
+.board-col ul{list-style:none;display:grid;gap:.7rem}
+.board-col li{display:flex;justify-content:space-between;gap:1rem;font-weight:500}
+.board-col li span:last-child{color:#bdbdb6;font-size:.9rem;text-align:right}
+.board-note{text-align:center;margin-top:2.25rem;color:#bdbdb6;font-size:.92rem}
+@media(min-width:760px){
+  .board{padding:4.5rem 4rem 3rem}
+  .board-cols{grid-template-columns:1.15fr 1fr}
+}
+
+/* Photo strip */
+.strip{display:grid;grid-template-columns:repeat(2,1fr);gap:4px;background:var(--dom)}
+.strip .photo{aspect-ratio:1/1}
+.strip .photo.tall{aspect-ratio:1/1}
+@media(min-width:800px){
+  .strip{grid-template-columns:1.3fr 1fr 1fr 1.3fr}
+  .strip .photo{aspect-ratio:4/5}
+}
+
+/* Area strip */
+.area{background:var(--acc);color:var(--ink);padding:2.25rem 0;overflow:hidden}
+.area .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.6rem}
+.area h2{font-size:clamp(1.05rem,1.6vw,1.2rem);letter-spacing:.14em;text-transform:uppercase;width:100%;font-family:"Archivo";font-weight:700}
+.area .town{font-family:"Archivo Black";font-size:clamp(1.6rem,4.2vw,3.2rem);line-height:1.1}
+.area .dot{width:12px;height:12px;background:var(--ink);border-radius:50%}
+
+/* Visit */
+.visit{display:grid;background:var(--dom);color:var(--surf)}
+.visit-photo{aspect-ratio:3/4}
+.visit-text{padding:3.5rem 1.25rem}
+.door{border:2px solid var(--acc);border-radius:200px 200px 4px 4px / 150px 150px 4px 4px;padding:4rem 1.75rem 2.25rem;text-align:center;max-width:26rem;margin:0 auto}
+.door .num{font-family:"Archivo Black";color:var(--acc);font-size:clamp(3rem,10vw,5.5rem);line-height:.9}
+.door .street{font-family:"Archivo Black";font-size:clamp(1.3rem,3vw,1.9rem);margin-top:.4rem}
+.door .city{color:#d6d6d0;margin-top:.35rem;font-weight:500}
+.visit h2{font-size:clamp(2rem,4.4vw,3.4rem);margin:2.5rem 0 1rem;max-width:14ch}
+.visit p{color:#d6d6d0;max-width:32rem}
+.contact-list{list-style:none;margin:1.5rem 0 2rem;display:grid;gap:.9rem}
+.contact-list li{display:flex;gap:.75rem;align-items:flex-start;font-weight:500}
+.contact-list svg{color:var(--acc);margin-top:.15rem}
+.contact-list a{text-decoration:none;border-bottom:1px solid var(--line)}
+.contact-list a:hover{border-color:var(--acc)}
+@media(min-width:960px){
+  .visit{grid-template-columns:5fr 7fr}
+  .visit-photo{aspect-ratio:auto;height:100%;min-height:720px}
+  .visit-text{padding:5rem max(2.5rem,calc((100vw - 1180px)/2)) 5rem 4.5rem;display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:center}
+  .visit h2{margin-top:0}
+}
+
+/* Footer */
+.foot{background:var(--surf);color:var(--ink);padding:3rem 0 2rem;border-top:4px solid var(--acc)}
+.foot .wrap{display:grid;gap:1.5rem}
+.foot p{color:var(--muted);font-size:.95rem}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;padding-top:1.5rem;border-top:1px solid #dcdcd6;font-size:.88rem;color:var(--muted)}
+@media(min-width:800px){.foot .wrap{grid-template-columns:1.2fr 1fr 1fr;align-items:start}.foot-bottom{grid-column:1/-1}}
+
+.wc-lift{transition:transform .25s ease,box-shadow .25s ease}
+.wc-lift:hover{transform:translateY(-3px)}
+@media (prefers-reduced-motion: reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<style>.wc-small-photo{object-fit:cover;image-rendering:auto;filter:contrast(1.04) saturate(1.05)}</style><style id="wc-motion">/* wc-motion:2 */
+html{scroll-behavior:smooth}html,body{overflow-x:clip}
+h1,h2,h3{max-width:100%;min-width:0}
+h1.wc-fitted,h2.wc-fitted,h3.wc-fitted,html:not(.wc-js) h1,html:not(.wc-js) h2,html:not(.wc-js) h3{overflow-wrap:break-word;hyphens:auto}
+.wc-bleed{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.wc-frame{overflow:hidden;position:relative}
+.wc-frame>img[data-photo-slot]{width:100%;height:100%;object-fit:cover;display:block;scale:1.12;will-change:transform}
+.wc-js .wc-frame>img.wc-kb{animation:wc-kb 22s ease-in-out infinite alternate}
+@keyframes wc-kb{from{scale:1.12}to{scale:1.22}}
+.wc-js .wc-reveal{opacity:0;transform:translate3d(0,28px,0);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.wc-js .wc-reveal.wc-in{opacity:1;transform:none}
+.wc-js .wc-reveal.wc-from-left{transform:translate3d(-36px,0,0)}.wc-js .wc-reveal.wc-from-right{transform:translate3d(36px,0,0)}
+.wc-js .wc-reveal.wc-in.wc-from-left,.wc-js .wc-reveal.wc-in.wc-from-right{transform:none}
+.wc-js h1 .wc-w{display:inline-block;opacity:0;transform:translate3d(0,.45em,0);animation:wc-word .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes wc-word{to{opacity:1;transform:none}}
+.wc-lift,.btn,[class*="btn-"],button,[class*="card"]{transition:transform .25s ease,box-shadow .25s ease}
+.wc-lift:hover,.btn:hover,[class*="btn-"]:hover,button:hover,[class*="card"]:hover{transform:translateY(-4px);box-shadow:0 14px 30px -12px rgba(0,0,0,.35)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+.wc-frame>img[data-photo-slot]{scale:1!important;translate:none!important;animation:none!important}
+.wc-js .wc-reveal,.wc-js h1 .wc-w{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
+.wc-lift:hover,.btn:hover,[class*="btn-"]:hover,button:hover,[class*="card"]:hover{transform:none}}
+</style>
+<script>document.documentElement.classList.add('wc-js')</script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Château Coffee Co. home">
+      <img data-photo-slot="logo" data-photo-role="logo" data-photo-query="logo" src="img/logo-3bfde306.webp" alt="Château Coffee Co. logo" style="height:48px;width:auto;object-fit:contain">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#story">Our Story</a>
+      <a href="#offerings">What We Pour</a>
+      <a href="#board">The Board</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="head-call wc-lift" href="tel:+15175804913">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+      <span>(517) 580-4913</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Cover hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div class="photo hero-photo">
+        <img data-photo-slot="hero" data-photo-query="coffee flight tasting four espresso drinks" src="img/hero-c727f10a.jpg" alt="A coffee flight of four different espresso drinks at Château Coffee Co.">
+      </div>
+      <div class="hero-text">
+        <span class="kicker wc-reveal">Lansing, Michigan &middot; S Waverly Rd</span>
+        <h1 id="hero-title">A little château on Waverly Road</h1>
+        <p class="lede wc-reveal">Tucked into a Lansing strip mall, Château Coffee Co. turns the everyday coffee run into something a little more special, with all the warmth of your neighborhood spot.</p>
+        <div class="hero-actions wc-reveal">
+          <a class="btn btn-gold wc-lift" href="#board">See what we pour
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <a class="btn btn-ghost wc-lift" href="https://www.google.com/maps/search/?api=1&query=1701+S+Waverly+Rd,+Lansing,+MI+48917" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <p class="rating wc-reveal">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F2B134" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+          <strong>4.7</strong> rating from 426 Google reviews
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature story -->
+  <section class="story" id="story" aria-labelledby="story-title">
+    <div class="story-grid">
+      <div class="photo story-photo">
+        <div class="wc-fallback" role="img" aria-label="The Château Coffee Co. lounge with a green wall and fireplace" style="display:flex;flex-direction:column;justify-content:flex-end;width:100%;height:100%;min-height:220px;padding:1.25rem;box-sizing:border-box;background-color:#1D1D1F;color:#F5F5F2;border-left:6px solid #F2B134"><span style="font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85">Château Coffee Co.</span></div>
+      </div>
+      <div class="story-text wc-reveal wc-from-right">
+        <span class="kicker dark">The Feature Story</span>
+        <h2 id="story-title">Step through the door, leave the parking lot behind</h2>
+        <p>From the outside, it is an ordinary stop on S Waverly Rd. Inside, Château Coffee Co. is a small, elegant room with a fireplace, a deep green wall and drinks built with care, like a French café that took a wrong turn and decided to stay in Lansing.</p>
+        <p>It is the place regulars, students and remote workers pick when they want something a cut above a chain, without losing the neighborhood feel that keeps them coming back.</p>
+        <blockquote class="pull wc-reveal">
+          <p>Refined, never stuffy. A château you can visit in your sweatpants.</p>
+          <cite>The Château way</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings as alternating rows -->
+  <section id="offerings" aria-labelledby="offer-title">
+    <div class="offer-head">
+      <div class="wrap">
+        <span class="kicker wc-reveal">What We Pour</span>
+        <h2 id="offer-title" class="wc-reveal">Coffee with a little old-world polish</h2>
+        <p class="wc-reveal">Espresso, brewed coffee, signature lattes, tea, pastries and breakfast to go. The daily ritual, plated like it matters.</p>
+      </div>
+    </div>
+    <div class="rows">
+      <article class="row" style="--ar:3/4;--h:600px">
+        <div class="photo">
+          <img data-photo-slot="gbp-3" data-photo-query="latte with latte art in white ceramic cup" src="img/gbp-3-a3016b36.jpg" alt="A latte with latte art in a white ceramic cup">
+        </div>
+        <div class="row-card wc-reveal wc-from-right wc-lift">
+          <span class="kicker dark">Espresso Bar</span>
+          <h3>Espresso &amp; signature lattes</h3>
+          <p>Straight shots, specialty espresso drinks and seasonal signature lattes, finished with the French-inspired presentation Château is known for.</p>
+          <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Specialty espresso drinks</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Seasonal and signature lattes</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Drip and brewed coffee, plus tea</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="row flip" style="--ar:1/1;--h:480px">
+        <div class="photo">
+          <img data-photo-slot="gbp-2" data-photo-query="colorful macarons on white plate" src="img/gbp-2-76e68d60.jpg" alt="Colorful macarons displayed on a white plate">
+        </div>
+        <div class="row-card wc-reveal wc-from-left wc-lift">
+          <span class="kicker dark">The Pastry Case</span>
+          <h3>Pastries &amp; baked goods</h3>
+          <p>A pastry case with a patisserie wink: colorful macarons and sweet bakes that pair with whatever is in your cup.</p>
+        </div>
+      </article>
+
+      <article class="row" style="--ar:4/5;--h:640px">
+        <div class="photo">
+          <img data-photo-slot="gbp-7" data-photo-query="chocolate pistachio cake slice with whipped cream" src="img/gbp-7-ce230647.jpg" alt="A chocolate pistachio cake slice with whipped cream">
+        </div>
+        <div class="row-card wc-reveal wc-from-right wc-lift">
+          <span class="kicker dark">Something Sweet</span>
+          <h3>Cake worth staying for</h3>
+          <p>Slices like chocolate pistachio cake with whipped cream, the kind of treat that turns a quick stop into a seat by the fireplace.</p>
+        </div>
+      </article>
+
+      <article class="row flip" style="--ar:3/2;--h:440px">
+        <div class="photo">
+          <img data-photo-slot="gbp-8" data-photo-query="caprese sandwich with mozzarella tomato and balsamic" src="img/gbp-8-6dd76160.jpg" alt="A caprese sandwich with mozzarella, tomato and balsamic">
+        </div>
+        <div class="row-card wc-reveal wc-from-left wc-lift">
+          <span class="kicker dark">Morning Plates</span>
+          <h3>Breakfast &amp; grab-and-go</h3>
+          <p>Grab-and-go breakfast and café plates like a caprese sandwich with mozzarella, tomato and balsamic, ready when the workday is calling.</p>
+          <div class="inset">
+            <div class="photo">
+              <img class="wc-small-photo" data-photo-slot="gbp-4" data-photo-query="acai bowl with granola strawberries and banana" src="img/gbp-4-d5176698.jpg" alt="An acai bowl topped with granola, strawberries and banana">
+            </div>
+            <p>Lighter mornings too, like an acai bowl with granola, strawberries and banana.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Chalkboard plaque -->
+  <section class="board-sec" id="board" aria-labelledby="board-title">
+    <div class="wrap">
+      <div class="board wc-reveal">
+        <span class="kicker">Today at the Château</span>
+        <h2 id="board-title">The Café Board</h2>
+        <p class="board-intro">Everything that comes across our counter, written the way it would be on the plaque behind the bar.</p>
+        <div class="board-cols">
+          <div class="board-col">
+            <h3>From the Bar</h3>
+            <ul>
+              <li><span>Espresso</span><span>straight shots</span></li>
+              <li><span>Specialty espresso drinks</span><span>made to order</span></li>
+              <li><span>Signature lattes</span><span>seasonal</span></li>
+              <li><span>Drip &amp; brewed coffee</span><span>daily</span></li>
+              <li><span>Coffee flight</span><span>four to taste</span></li>
+              <li><span>Tea</span><span>hot</span></li>
+            </ul>
+          </div>
+          <div class="board-col">
+            <h3>From the Case</h3>
+            <ul>
+              <li><span>Macarons</span><span>pastry case</span></li>
+              <li><span>Cakes &amp; baked goods</span><span>by the slice</span></li>
+              <li><span>Grab-and-go breakfast</span><span>morning</span></li>
+              <li><span>Café sandwiches</span><span>caprese &amp; more</span></li>
+              <li><span>Acai bowls</span><span>fresh topped</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="board-note">Offerings change with the season. Call (517) 580-4913 to ask what is on today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo strip from the cafe's own site -->
+  <section class="strip wc-bleed" aria-label="Photos from Château Coffee Co.">
+    <div class="photo"><img data-photo-slot="site-1" data-photo-query="Chateau Coffee Co cafe photo" src="img/site-1-255cfea1.webp" alt="Photo from Château Coffee Co."></div>
+    <div class="photo"><img data-photo-slot="site-2" data-photo-query="Chateau Coffee Co cafe photo" src="img/site-2-7c70c711.webp" alt="Photo from Château Coffee Co."></div>
+    <div class="photo"><img data-photo-slot="site-3" data-photo-query="Chateau Coffee Co cafe photo" src="img/site-3-30f31924.webp" alt="Photo from Château Coffee Co."></div>
+    <div class="photo"><img data-photo-slot="site-4" data-photo-query="Chateau Coffee Co cafe photo" src="img/site-4-bed27597.webp" alt="Photo from Château Coffee Co."></div>
+  </section>
+
+  <!-- Area strip -->
+  <section class="area wc-bleed" aria-labelledby="area-title">
+    <div class="wrap wc-reveal">
+      <h2 id="area-title">Pouring for the neighborhood</h2>
+      <span class="town">Lansing</span><span class="dot" aria-hidden="true"></span>
+      <span class="town">S Waverly Rd</span><span class="dot" aria-hidden="true"></span>
+      <span class="town">Michigan 48917</span>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="photo visit-photo">
+      <img data-photo-slot="gbp-5" data-photo-query="coffee shop counter with menu boards and plants" src="img/gbp-5-55159595.jpg" alt="The Château Coffee Co. counter with menu boards and plants">
+    </div>
+    <div class="visit-text">
+      <div class="door wc-reveal wc-from-left" aria-label="Address: 1701 S Waverly Rd, Lansing, MI 48917">
+        <span class="kicker" style="justify-content:center">The Château Door</span>
+        <div class="num">1701</div>
+        <div class="street">S Waverly Rd</div>
+        <div class="city">Lansing, MI 48917</div>
+      </div>
+      <div class="wc-reveal wc-from-right">
+        <h2 id="visit-title">Come find the château</h2>
+        <p>Look for the little bit of France in the strip mall on S Waverly Rd. Pull up, step in, and order something that feels a little more special than usual.</p>
+        <ul class="contact-list">
+          <li>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+            <a href="https://www.google.com/maps/search/?api=1&query=1701+S+Waverly+Rd,+Lansing,+MI+48917" target="_blank" rel="noopener">1701 S Waverly Rd, Lansing, MI 48917</a>
+          </li>
+          <li>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+            <a href="tel:+15175804913">(517) 580-4913</a>
+          </li>
+          <li>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+            <a href="https://www.chateaucoffeeco.com" target="_blank" rel="noopener">chateaucoffeeco.com</a>
+          </li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-gold wc-lift" href="https://www.google.com/maps/search/?api=1&query=1701+S+Waverly+Rd,+Lansing,+MI+48917" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ghost wc-lift" href="tel:+15175804913">Call the café</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <img data-photo-slot="logo" data-photo-role="logo" data-photo-query="logo" src="img/logo-3bfde306.webp" alt="Château Coffee Co. logo" style="height:48px;width:auto;object-fit:contain">
+      <p style="margin-top:1rem;max-width:22rem">A small, elegant château tucked into a Lansing strip mall. Refined coffee, neighborhood warmth.</p>
+    </div>
+    <div>
+      <p><strong style="color:var(--ink)">Visit</strong><br>1701 S Waverly Rd<br>Lansing, MI 48917</p>
+    </div>
+    <div>
+      <p><strong style="color:var(--ink)">Call</strong><br><a href="tel:+15175804913">(517) 580-4913</a></p>
+      <p style="margin-top:.75rem">4.7 stars from 426 Google reviews</p>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Château Coffee Co.</span>
+      <span>Website sample by Wild Card Creative Co</span>
+    </div>
+  </div>
+<p class="wc-photo-credits wc-gbp-credit" style="font-size:.75rem;opacity:.75;margin:1rem 0 0">Photos: Château Coffee Co. on Google Business Profile.</p></footer>
+
+<script id="wc-motion-js">/* wc-motion:2 */
+(function(){var d=document,rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var imgs=[].slice.call(d.querySelectorAll('img[data-photo-slot]'));
+imgs.forEach(function(im,i){var p=im.parentElement;if(!p||p===d.body)return;p.classList.add('wc-frame');im.classList.add('wc-kb');im.style.animationDelay=(-(i*3.7)%22)+'s';});
+var h=d.querySelector('h1');if(h&&!rm&&!h.querySelector('.wc-w')){var n=0;[].slice.call(h.childNodes).forEach(function(t){if(t.nodeType!==3||!t.textContent.trim())return;var f=d.createDocumentFragment();t.textContent.split(/(\s+)/).forEach(function(s){if(!s)return;if(/^\s+$/.test(s)){f.appendChild(d.createTextNode(s));return;}var sp=d.createElement('span');sp.className='wc-w';sp.textContent=s;sp.style.animationDelay=(0.15+0.07*n++)+'s';f.appendChild(sp);});h.replaceChild(f,t);});}
+var hs=[].slice.call(d.querySelectorAll('h1,h2,h3'));
+function unblow(h){var e=h;while(e&&e.parentElement&&e!==d.body){var pd=getComputedStyle(e.parentElement).display;if(/grid|flex/.test(pd))e.style.minWidth='0';e=e.parentElement;}}hs.forEach(unblow);
+function fit(){hs.forEach(function(h){h.classList.remove('wc-fitted');h.style.fontSize='';var s=parseFloat(getComputedStyle(h).fontSize)||16,min=Math.max(15,s*0.42),n=0;while(h.scrollWidth>h.clientWidth+1&&s>min&&n++<40){s*=0.94;h.style.fontSize=s.toFixed(1)+'px';}h.classList.add('wc-fitted');});}
+fit();if(d.fonts&&d.fonts.ready)d.fonts.ready.then(fit);var ft;addEventListener('resize',function(){clearTimeout(ft);ft=setTimeout(fit,150)});
+var sel='.wc-reveal,main section:not(:first-of-type) h2,[class*="card"],[class*="caption"],[class*="copy"],[class*="quote"],[class*="panel"],[class*="step"],main section:not(:first-of-type) li';
+var els=[].slice.call(d.querySelectorAll(sel)).filter(function(e){return !e.closest('header')&&!e.closest('h1')&&!(e.parentElement&&e.parentElement.closest('.wc-reveal'));});
+els.forEach(function(e,i){e.classList.add('wc-reveal');if(!/wc-from-/.test(e.className)){var r=e.getBoundingClientRect();if(r.width&&r.width<innerWidth*0.7)e.classList.add(r.left+r.width/2<innerWidth/2?'wc-from-left':'wc-from-right');}});
+if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('wc-in')});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.style.transitionDelay=(x.target.dataset.wcDelay||0)+'ms';x.target.classList.add('wc-in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:0.12});
+els.forEach(function(e,i){e.dataset.wcDelay=String((i%3)*90);io.observe(e)});
+var vis=new Set(),tick=false;var io2=new IntersectionObserver(function(es){es.forEach(function(x){x.isIntersecting?vis.add(x.target):vis.delete(x.target)})});imgs.forEach(function(im){io2.observe(im.parentElement)});
+function par(){tick=false;var vh=innerHeight;vis.forEach(function(f){var r=f.getBoundingClientRect();var c=(r.top+r.height/2-vh/2)/vh;var im=f.querySelector('img[data-photo-slot]');if(im)im.style.translate='0 '+(Math.max(-1,Math.min(1,c))*-22).toFixed(1)+'px';})}
+addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(par)}},{passive:true});par();})();
+</script>
+</body>
+</html>
