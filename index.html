@@ -4,177 +4,190 @@
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Château Coffee Co. | European café elegance on S Waverly Rd, Lansing</title>
-<meta name="description" content="Château Coffee Co. brings a touch of European café elegance to Lansing: espresso, specialty drinks, pastries and a room worth lingering in at 1701 S Waverly Rd.">
+<title>Château Coffee Co. | French-Inspired Coffee Shop in Lansing, MI</title>
+<meta name="description" content="Château Coffee Co. is a storybook, French-inspired neighborhood coffee shop at 1701 S Waverly Rd in Lansing, Michigan. Espresso, seasonal drinks, pastries and a cozy place to linger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --dom:#1D1D1F;
-  --acc:#F2B134;
-  --surf:#F5F5F2;
-  --ink:#111111;
-  --stone:#2A2A2D;
-  --mute:#C9C6BE;
-  --arch:clamp(140px,22vw,320px);
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Archivo",Georgia,serif;font-size:1.0625rem;line-height:1.65;color:var(--surf);background:var(--dom);-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
-a{color:inherit}
-h1,h2,h3{font-family:"Archivo Black","Archivo",Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.01em;margin:0}
-p{margin:0 0 1rem}
-.wrap{width:min(1240px,100% - 2.5rem);margin-inline:auto}
-.kicker{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);margin-bottom:1.1rem}
-.kicker::before{content:"";width:2.2rem;height:2px;background:var(--acc)}
-.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.5rem;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid var(--acc);border-radius:4px;transition:transform .25s ease,background-color .25s ease,color .25s ease}
-.btn svg{width:1.2rem;height:1.2rem;flex:none}
-.btn-gold{background:var(--acc);color:var(--ink)}
-.btn-gold:hover{background:var(--surf);border-color:var(--surf)}
-.btn-ghost{color:var(--surf);border-color:rgba(245,245,242,.45)}
-.btn-ghost:hover{border-color:var(--acc);color:var(--acc)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+  :root{
+    --deep:#0E3B43;
+    --accent:#F28F3B;
+    --surface:#EEF3F1;
+    --ink:#0A1E22;
+    --muted:#3c5459;
+    --rule:rgba(14,59,67,.22);
+    --arch:clamp(140px, 38vw, 520px);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--surface);color:var(--ink);
+    font-family:"Schibsted Grotesk", Georgia, serif;
+    font-size:1.0625rem;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  h1,h2,h3{font-family:"Gloock", Georgia, serif;font-weight:400;line-height:1.05;margin:0;color:var(--deep);letter-spacing:-.01em}
+  p{margin:0 0 1rem}
+  .wrap{width:min(1180px, 100% - 2.5rem);margin-inline:auto}
+  .eyebrow{
+    font-variant:small-caps;font-size:1.05rem;letter-spacing:.14em;font-weight:600;
+    color:var(--deep);text-transform:lowercase;display:inline-block;margin-bottom:.9rem;
+  }
+  .eyebrow::before{content:"";display:inline-block;width:1.6rem;height:2px;background:var(--accent);vertical-align:middle;margin-right:.7rem}
 
-/* photo frames */
-.ph{position:relative;overflow:hidden;background-color:var(--dom)}
-.ph img{width:100%;height:100%;object-fit:cover}
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:.95rem 1.4rem;border-radius:3px;font-weight:600;font-size:1rem;
+    text-decoration:none;border:2px solid var(--deep);transition:transform .25s ease, box-shadow .25s ease, background .2s;
+  }
+  .btn svg{width:1.2rem;height:1.2rem;flex:none}
+  .btn-solid{background:var(--deep);color:var(--surface)}
+  .btn-solid:hover{background:var(--ink);border-color:var(--ink)}
+  .btn-ghost{background:transparent;color:var(--deep)}
+  .btn-ghost:hover{background:rgba(14,59,67,.07)}
+  .btn-accent{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 
-/* header */
-.top{position:sticky;top:0;z-index:50;background:var(--surf);color:var(--ink);border-bottom:1px solid #DEDBD3}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:68px}
-.brand{display:flex;align-items:center;text-decoration:none}
-.nav{display:none;gap:1.8rem;font-weight:600;font-size:.95rem}
-.nav a{text-decoration:none}
-.nav a:hover{color:#6b5418}
-.top .btn{padding:.6rem 1rem;font-size:.9rem;color:var(--ink)}
-@media(min-width:900px){.nav{display:flex}}
+  /* Header */
+  .site-head{position:sticky;top:0;z-index:20;background:rgba(238,243,241,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+  .site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.65rem 0}
+  .brand{display:flex;align-items:center;text-decoration:none}
+  .nav{display:none;gap:1.6rem;font-weight:500;font-size:.95rem}
+  .nav a{text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
+  .nav a:hover{border-color:var(--accent)}
+  .head-call{padding:.6rem 1rem;font-size:.92rem}
+  @media(min-width:860px){.nav{display:flex}}
 
-/* hero */
-.hero{position:relative;background:var(--dom);overflow:hidden}
-.hero-photo{aspect-ratio:4/5;border-radius:var(--arch) var(--arch) 0 0;margin:1rem 1rem 0}
-.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,29,31,0) 45%,rgba(29,29,31,.85) 100%);pointer-events:none}
-.hero-copy{position:relative;z-index:2;padding:0 1.25rem 3.5rem;margin-top:-5.5rem}
-.hero h1{font-size:clamp(2.6rem,10.5vw,6.4rem);color:var(--surf);max-width:11ch}
-.hero h1 em{font-style:normal;color:var(--acc)}
-.hero-lede{font-size:clamp(1.05rem,2.2vw,1.3rem);max-width:34ch;color:var(--mute);margin:1.4rem 0 2rem}
-.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem}
-.hero-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:2.2rem;font-size:.95rem;color:var(--mute)}
-.hero-meta span{display:inline-flex;align-items:center;gap:.45rem}
-.hero-meta svg{width:1.15rem;height:1.15rem;color:var(--acc)}
-@media(min-width:900px){
-  .hero{min-height:calc(100vh - 68px);display:grid;grid-template-columns:40% 60%;align-items:center}
-  .hero-photo{grid-column:2;grid-row:1;margin:2rem 0 0;height:calc(100% - 2rem);aspect-ratio:auto;border-radius:var(--arch) 0 0 0}
-  .hero-photo::after{background:linear-gradient(90deg,rgba(29,29,31,.92) 0%,rgba(29,29,31,.35) 22%,rgba(29,29,31,0) 45%)}
-  .hero-copy{grid-column:1/3;grid-row:1;margin:0;padding:4rem 0 4rem max(2.5rem,calc((100vw - 1240px)/2));max-width:62%}
-  .hero h1{font-size:clamp(3.4rem,6.4vw,6.6rem)}
-}
+  /* Hero: asymmetric arched doorway */
+  .hero{padding-top:clamp(1rem,3vw,2rem)}
+  .hero-frame{
+    position:relative;overflow:hidden;
+    margin-left:clamp(1.25rem, 8vw, 9rem);margin-right:0;
+    aspect-ratio:4/5;
+    border-top-left-radius:var(--arch);
+    border-top-right-radius:0;
+    background:var(--deep);
+  }
+  @media(min-width:700px){.hero-frame{aspect-ratio:16/10}}
+  @media(min-width:1100px){.hero-frame{aspect-ratio:16/8}}
+  .hero-frame img{width:100%;height:100%;object-fit:cover}
+  .hero-copy{display:grid;gap:1.6rem;padding:clamp(2rem,5vw,3.5rem) 0 clamp(3rem,7vw,5rem)}
+  .hero-copy h1{font-size:clamp(2.4rem, 7.4vw, 5.6rem);max-width:15ch}
+  .hero-copy .lede{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:46ch;color:var(--muted)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+  @media(min-width:960px){
+    .hero-copy{grid-template-columns:1.35fr 1fr;align-items:end;column-gap:4rem}
+  }
 
-/* arch divider */
-.arch-div{display:block;width:100%;height:clamp(60px,9vw,130px);margin-bottom:-1px}
-.arch-div svg{display:block;width:100%;height:100%}
+  /* Signature: the doorway address rule */
+  .doorway-line{
+    border-top:1px solid var(--deep);border-bottom:1px solid var(--deep);
+    padding:.35rem 0;
+  }
+  .doorway-line .inner{
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    padding:1.1rem 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.6rem 2rem;
+  }
+  .doorway-line .addr{font-family:"Gloock",Georgia,serif;font-size:clamp(1.25rem,2.6vw,1.9rem);color:var(--deep)}
+  .doorway-line .stars{display:flex;align-items:center;gap:.5rem;font-weight:600}
+  .doorway-line .stars svg{width:1.25rem;height:1.25rem;color:var(--accent)}
+  .doorway-line .city{font-variant:small-caps;letter-spacing:.14em;text-transform:lowercase;font-weight:600;color:var(--muted)}
 
-/* story */
-.story{background:var(--surf);color:var(--ink)}
-.story-grid{display:grid;gap:0}
-.story-photo{aspect-ratio:3/4;border-radius:0 0 var(--arch) var(--arch)}
-.story-text{padding:3rem 1.25rem 4rem}
-.story .kicker{color:#6b5418}
-.story .kicker::before{background:#6b5418}
-.story h2{font-size:clamp(2.1rem,5.4vw,4.4rem);max-width:14ch;margin-bottom:1.6rem}
-.story p{max-width:58ch;color:#2b2b2d}
-.pull{margin:2.4rem 0;padding:1.8rem 0 1.8rem 1.6rem;border-left:6px solid var(--acc)}
-.pull p{font-family:"Archivo Black",Georgia,serif;font-size:clamp(1.5rem,3.4vw,2.5rem);line-height:1.12;color:var(--ink);max-width:22ch;margin:0}
-.pull cite{display:block;margin-top:1rem;font-style:normal;font-weight:700;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:#6b5418}
-@media(min-width:900px){
-  .story-grid{grid-template-columns:42% 1fr;align-items:start}
-  .story-photo{aspect-ratio:auto;height:min(92vh,860px);border-radius:0 0 var(--arch) 0}
-  .story-text{padding:6rem max(2.5rem,calc((100vw - 1240px)/2)) 6rem 5rem}
-}
+  /* Intro */
+  .intro{padding:clamp(4rem,9vw,7.5rem) 0}
+  .intro-grid{display:grid;gap:2rem}
+  .intro h2{font-size:clamp(2rem,5vw,3.6rem);max-width:16ch}
+  .intro p{max-width:58ch;font-size:1.12rem}
+  @media(min-width:900px){.intro-grid{grid-template-columns:1fr 1fr;gap:5rem;align-items:start}}
 
-/* services */
-.house{background:var(--dom);padding:4rem 0 2rem}
-.house-head{padding:0 1.25rem 3rem}
-.house-head h2{font-size:clamp(2.2rem,6vw,5rem);max-width:13ch}
-.house-head p{color:var(--mute);max-width:46ch;margin-top:1.2rem}
-@media(min-width:900px){.house-head{width:min(1240px,100% - 5rem);margin-inline:auto;padding:2rem 0 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:end}}
-.row{display:grid;margin-bottom:3rem}
-.row .ph.main{aspect-ratio:4/3}
-.row.tall .ph.main{aspect-ratio:4/5}
-.row.wide .ph.main{aspect-ratio:16/10}
-.row.mid .ph.main{aspect-ratio:1/1}
-.card{position:relative;z-index:2;background:var(--stone);margin:-3rem 1rem 0;padding:2rem 1.5rem;border-top:4px solid var(--acc);border-radius:0 0 4px 4px}
-.card h3{font-size:clamp(1.7rem,3.6vw,2.9rem);margin-bottom:1rem}
-.card p{color:var(--mute)}
-.card .tag{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:.9rem}
-.card .tag svg{width:1.1rem;height:1.1rem}
-.inset{display:grid;grid-template-columns:96px 1fr;gap:1rem;align-items:center;margin-top:1.4rem;padding-top:1.4rem;border-top:1px solid rgba(245,245,242,.14)}
-.inset .ph{aspect-ratio:1/1;border-radius:48px 48px 4px 4px}
-.inset p{margin:0;font-size:.95rem}
-@media(min-width:900px){
-  .row{grid-template-columns:58% 1fr;align-items:center;margin-bottom:6rem}
-  .row .ph.main{grid-column:1;grid-row:1}
-  .row.tall .ph.main{aspect-ratio:auto;height:min(88vh,820px)}
-  .row.wide .ph.main{aspect-ratio:auto;height:min(58vh,540px)}
-  .row.mid .ph.main{aspect-ratio:auto;height:min(72vh,680px)}
-  .row:not(.tall):not(.wide):not(.mid) .ph.main{aspect-ratio:auto;height:min(66vh,600px)}
-  .card{grid-column:2;grid-row:1;margin:0 max(2.5rem,calc((100vw - 1240px)/2)) 0 -6rem;padding:2.8rem 2.4rem}
-  .row.flip{grid-template-columns:1fr 58%}
-  .row.flip .ph.main{grid-column:2}
-  .row.flip .card{grid-column:1;margin:0 -6rem 0 max(2.5rem,calc((100vw - 1240px)/2))}
-  .row .ph.main{border-radius:0 var(--arch) 0 0}
-  .row.flip .ph.main{border-radius:var(--arch) 0 0 0}
-}
+  /* Gallery of offerings */
+  .gallery-head{padding-bottom:clamp(2rem,4vw,3rem)}
+  .gallery-head h2{font-size:clamp(2rem,5.4vw,4rem);max-width:14ch}
+  .piece{position:relative;display:grid;margin-bottom:clamp(3.5rem,8vw,7rem)}
+  .piece-photo{position:relative;overflow:hidden;background:var(--deep)}
+  .piece-photo img{width:100%;height:100%;object-fit:cover}
+  .ratio-wide{aspect-ratio:4/3}
+  .ratio-tall{aspect-ratio:4/5}
+  .arch-left{border-top-left-radius:var(--arch)}
+  .arch-right{border-top-right-radius:var(--arch)}
+  .caption{
+    background:var(--surface);position:relative;z-index:2;
+    padding:1.6rem 1.25rem 0;max-width:34rem;
+  }
+  .caption h3{font-size:clamp(1.7rem,3.6vw,2.7rem);margin-bottom:.7rem}
+  .caption p{color:var(--muted)}
+  .caption .tag{display:block;font-variant:small-caps;letter-spacing:.14em;text-transform:lowercase;font-weight:600;color:var(--deep);margin-bottom:.5rem}
+  .caption .tag::after{content:"";display:block;width:2.4rem;height:2px;background:var(--accent);margin-top:.5rem}
+  @media(min-width:900px){
+    .piece{grid-template-columns:repeat(12,1fr);align-items:end}
+    .piece-photo{grid-row:1}
+    .piece.left .piece-photo{grid-column:1 / span 8}
+    .piece.left .caption{grid-column:8 / span 5;grid-row:1;margin-bottom:3rem;padding:2.4rem 2.4rem 2rem;box-shadow:0 20px 50px -30px rgba(10,30,34,.45)}
+    .piece.right .piece-photo{grid-column:5 / span 8}
+    .piece.right .caption{grid-column:1 / span 5;grid-row:1;margin-bottom:3rem;padding:2.4rem 2.4rem 2rem;box-shadow:0 20px 50px -30px rgba(10,30,34,.45);justify-self:end}
+    .piece .ratio-tall{aspect-ratio:5/4}
+  }
+  @media(min-width:1300px){.piece.left .caption{margin-right:calc((100vw - 1180px)/2)}}
 
-/* trust */
-.trust{background:var(--surf);color:var(--ink);padding:4rem 0}
-.trust-grid{display:grid;gap:2rem;align-items:center}
-.score{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
-.score strong{font-family:"Archivo Black",Georgia,serif;font-weight:400;font-size:clamp(4.5rem,14vw,9rem);line-height:.9}
-.stars{display:flex;gap:.2rem;color:#B07D12}
-.stars svg{width:1.6rem;height:1.6rem}
-.trust h2{font-size:clamp(1.8rem,4vw,3rem);max-width:18ch;margin-bottom:1rem}
-.trust p{color:#2b2b2d;max-width:52ch}
-@media(min-width:900px){.trust-grid{grid-template-columns:auto 1fr;gap:5rem}}
+  /* Inset pair (small photo allowed) */
+  .inset{display:inline-block;width:min(180px,46%);margin-top:1rem}
+  .inset-photo{aspect-ratio:1/1;overflow:hidden;border-radius:90px 90px 0 0;background:var(--deep)}
+  .inset-photo img{width:100%;height:100%;object-fit:cover}
+  .inset small{display:block;font-size:.85rem;color:var(--muted);margin-top:.4rem}
 
-/* area strip */
-.area{background:var(--acc);color:var(--ink);padding:2.2rem 0;overflow:hidden}
-.area-line{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.6rem 1.6rem;font-family:"Archivo Black",Georgia,serif;font-size:clamp(1.3rem,3.6vw,2.6rem);line-height:1.1;text-transform:uppercase;text-align:center;padding-inline:1rem}
-.area-line i{font-style:normal;width:.5em;height:.7em;border-radius:.25em .25em 0 0;background:var(--ink);display:inline-block}
+  /* Full-bleed lounge band — the page's only gradient */
+  .band{position:relative;overflow:hidden;min-height:clamp(440px,70vw,720px);display:flex;align-items:flex-end;color:var(--surface)}
+  .band-photo{position:absolute;inset:0;overflow:hidden}
+  .band-photo img{width:100%;height:100%;object-fit:cover}
+  .band::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(10,30,34,.88) 0%, rgba(10,30,34,.35) 55%, rgba(10,30,34,0) 100%);z-index:1}
+  .band .wrap{position:relative;z-index:2;padding:clamp(2.5rem,6vw,5rem) 0}
+  .band h2{color:var(--surface);font-size:clamp(2rem,5.6vw,4.4rem);max-width:15ch;margin-bottom:1rem}
+  .band p{max-width:50ch;font-size:1.12rem;color:#dfe9e6}
+  .band .eyebrow{color:var(--surface)}
 
-/* gathering band */
-.room{position:relative}
-.room .ph{aspect-ratio:16/9;min-height:320px}
+  /* Visit */
+  .visit{background:var(--deep);color:var(--surface);padding:0 0 clamp(4rem,8vw,6rem)}
+  .visit-grid{display:grid}
+  .visit-photo{overflow:hidden;aspect-ratio:3/4;border-top-right-radius:var(--arch)}
+  .visit-photo img{width:100%;height:100%;object-fit:cover}
+  .visit-copy{padding:clamp(2.5rem,6vw,4.5rem) 1.25rem 0}
+  .visit h2{color:var(--surface);font-size:clamp(2.2rem,5.4vw,4.2rem);margin-bottom:1.2rem}
+  .visit .eyebrow{color:var(--surface)}
+  .visit p{color:#d4e1de;max-width:46ch}
+  .facts{list-style:none;padding:0;margin:2rem 0;border-top:1px solid rgba(238,243,241,.25)}
+  .facts li{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem 0;border-bottom:1px solid rgba(238,243,241,.25)}
+  .facts svg{width:1.5rem;height:1.5rem;flex:none;color:var(--accent);margin-top:.15rem}
+  .facts strong{display:block;font-weight:600;color:var(--surface)}
+  .facts a{color:var(--surface);text-underline-offset:3px}
+  .visit .btn-ghost{color:var(--surface);border-color:var(--surface)}
+  .visit .btn-ghost:hover{background:rgba(238,243,241,.1)}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+  @media(min-width:900px){
+    .visit{padding-top:0}
+    .visit-grid{grid-template-columns:5fr 6fr;align-items:center}
+    .visit-photo{aspect-ratio:auto;height:100%;min-height:640px}
+    .visit-copy{padding:5rem clamp(2rem,6vw,6rem)}
+  }
 
-/* visit */
-.visit{background:var(--dom);padding:4.5rem 0 5rem}
-.visit-grid{display:grid;gap:3rem}
-.visit h2{font-size:clamp(2.4rem,7vw,5.6rem);max-width:10ch;margin-bottom:1.4rem}
-.visit h2 em{font-style:normal;color:var(--acc)}
-.visit .lede{color:var(--mute);max-width:44ch;margin-bottom:2rem}
-.facts{list-style:none;margin:0;padding:0;border-top:1px solid rgba(245,245,242,.16)}
-.facts li{display:grid;grid-template-columns:2.4rem 1fr;gap:.8rem;padding:1.4rem 0;border-bottom:1px solid rgba(245,245,242,.16)}
-.facts svg{width:1.6rem;height:1.6rem;color:var(--acc)}
-.facts small{display:block;font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
-.facts a,.facts span{font-weight:600;font-size:1.15rem;text-decoration:none}
-.facts a:hover{color:var(--acc)}
-@media(min-width:900px){.visit-grid{grid-template-columns:1.1fr 1fr;align-items:end}}
+  /* Footer */
+  .site-foot{padding:3rem 0 2.5rem;border-top:1px solid var(--rule)}
+  .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem 3rem;align-items:flex-start}
+  .site-foot p{margin:0;color:var(--muted);font-size:.95rem}
+  .site-foot .credit{margin-top:2rem;padding-top:1.2rem;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;font-size:.88rem;color:var(--muted)}
 
-/* footer */
-footer{background:#141416;color:var(--mute);padding:3rem 0 2.5rem;font-size:.95rem}
-.foot{display:grid;gap:1.6rem}
-.foot-logo{display:inline-block;background:var(--surf);padding:.6rem 1rem;border-radius:4px}
-.foot p{margin:0}
-.foot strong{color:var(--surf)}
-@media(min-width:900px){.foot{grid-template-columns:auto 1fr auto;align-items:center;gap:3rem}}
-
-@media (prefers-reduced-motion: reduce){
-  html{scroll-behavior:auto}
-  .btn{transition:none}
-}
+  .wc-lift{transition:transform .25s ease, box-shadow .25s ease}
+  .wc-lift:hover{transform:translateY(-3px)}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .wc-lift,.btn{transition:none}
+    .wc-lift:hover{transform:none}
+  }
 </style>
-<style>.wc-small-photo{object-fit:cover;image-rendering:auto;filter:contrast(1.04) saturate(1.05)}</style><style id="wc-motion">/* wc-motion:2 */
+<style>.wc-small-photo{object-fit:cover;image-rendering:auto;filter:contrast(1.04) saturate(1.05)}</style><style id="wc-motion">/* wc-motion:3 */
 html{scroll-behavior:smooth}html,body{overflow-x:clip}
 h1,h2,h3{max-width:100%;min-width:0}
 h1.wc-fitted,h2.wc-fitted,h3.wc-fitted,html:not(.wc-js) h1,html:not(.wc-js) h2,html:not(.wc-js) h3{overflow-wrap:break-word;hyphens:auto}
@@ -185,6 +198,7 @@ h1.wc-fitted,h2.wc-fitted,h3.wc-fitted,html:not(.wc-js) h1,html:not(.wc-js) h2,h
 @keyframes wc-kb{from{scale:1.12}to{scale:1.22}}
 .wc-js .wc-reveal{opacity:0;transform:translate3d(0,28px,0);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
 .wc-js .wc-reveal.wc-in{opacity:1;transform:none}
+.wc-js .wc-reveal .wc-reveal{opacity:1;transform:none}
 .wc-js .wc-reveal.wc-from-left{transform:translate3d(-36px,0,0)}.wc-js .wc-reveal.wc-from-right{transform:translate3d(36px,0,0)}
 .wc-js .wc-reveal.wc-in.wc-from-left,.wc-js .wc-reveal.wc-in.wc-from-right{transform:none}
 .wc-js h1 .wc-w{display:inline-block;opacity:0;transform:translate3d(0,.45em,0);animation:wc-word .7s cubic-bezier(.2,.7,.2,1) forwards}
@@ -200,258 +214,210 @@ h1.wc-fitted,h2.wc-fitted,h3.wc-fitted,html:not(.wc-js) h1,html:not(.wc-js) h2,h
 </head>
 <body>
 
-<header class="top">
+<header class="site-head">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Château Coffee Co. home">
       <img data-photo-slot="logo" data-photo-role="logo" data-photo-query="logo" src="img/logo-3bfde306.webp" alt="Château Coffee Co. logo" style="height:48px;width:auto;object-fit:contain">
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#story">The Château</a>
-      <a href="#house">The Bar</a>
-      <a href="#room">The Room</a>
+      <a href="#about">The Château</a>
+      <a href="#offerings">What We Pour</a>
       <a href="#visit">Visit</a>
     </nav>
-    <a class="btn btn-gold wc-lift" href="#visit">Find your table</a>
+    <a class="btn btn-solid head-call wc-lift" href="tel:+15175804913">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+      (517) 580-4913
+    </a>
   </div>
 </header>
 
 <main id="top">
 
   <section class="hero" aria-labelledby="hero-title">
-    <div class="ph hero-photo">
-      <img data-photo-slot="hero" data-photo-query="coffee flight tasting with whipped cream" src="img/hero-c727f10a.jpg" alt="A coffee flight of small drinks topped with whipped cream at Château Coffee Co.">
+    <div class="hero-frame wc-bleed">
+      <img data-photo-slot="hero" data-photo-query="coffee flight tasting sampler with whipped cream" src="img/hero-c727f10a.jpg" alt="A coffee flight tasting sampler topped with whipped cream at Château Coffee Co.">
     </div>
-    <div class="hero-copy">
-      <p class="kicker wc-reveal">Lansing, Michigan · S Waverly Rd</p>
-      <h1 id="hero-title">Step through the gate. <em>Stay a while.</em></h1>
-      <p class="hero-lede wc-reveal">Château Coffee Co. brings a touch of European café elegance to Lansing. A coffeehouse that is romantic and refined, and still your neighborhood spot.</p>
-      <div class="hero-actions wc-reveal">
-        <a class="btn btn-gold wc-lift" href="https://www.google.com/maps/search/?api=1&query=1701+S+Waverly+Rd+Lansing+MI+48917">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-          Get directions
-        </a>
-        <a class="btn btn-ghost wc-lift" href="tel:+15175804913">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
-          (517) 580-4913
-        </a>
+    <div class="wrap hero-copy">
+      <div class="wc-reveal">
+        <span class="eyebrow">A neighborhood café on S Waverly Rd</span>
+        <h1 id="hero-title">A little slice of the French countryside, right here in Lansing</h1>
       </div>
-      <div class="hero-meta wc-reveal">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          4.7 from 426 reviews
-        </span>
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-          1701 S Waverly Rd
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <div class="arch-div" aria-hidden="true" style="background:var(--dom)">
-    <svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="#F5F5F2" d="M0 130V100H420V60A300 60 0 0 1 1020 60V100H1440V130Z"/></svg>
-  </div>
-
-  <section class="story" id="story" aria-labelledby="story-title">
-    <div class="story-grid">
-      <div class="ph story-photo wc-bleed">
-        <img data-photo-slot="site-1" data-photo-query="inside chateau coffee co lansing cafe" src="img/site-1-255cfea1.webp" alt="A moment inside Château Coffee Co. in Lansing">
-      </div>
-      <div class="story-text wc-reveal wc-from-right">
-        <p class="kicker">The story of the house</p>
-        <h2 id="story-title">A château on the Waverly corridor</h2>
-        <p>Most coffee shops lean on plaid and reclaimed wood. Château Coffee Co. went another way: a coffeehouse that borrows its manners from the European café, with a little romance in the room and a little ceremony in the cup.</p>
-        <p>It is elegant without being stiff. The regulars come every morning, students settle in with laptops, professionals stop between meetings, and the people behind the bar know the neighborhood by name.</p>
-        <blockquote class="pull wc-reveal">
-          <p>Your coffee run should feel like a small escape, not a transaction.</p>
-          <cite>The Château idea</cite>
-        </blockquote>
-        <p>That idea is why 426 reviewers have given it a 4.7. Old-world charm, with the easy familiarity of the place down the street.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="arch-div" aria-hidden="true" style="background:var(--surf)">
-    <svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="#1D1D1F" d="M0 130V100H420V60A300 60 0 0 1 1020 60V100H1440V130Z"/></svg>
-  </div>
-
-  <section class="house" id="house" aria-labelledby="house-title">
-    <div class="house-head">
-      <h2 id="house-title" class="wc-reveal">Poured, plated and lingered over</h2>
-      <p class="wc-reveal">Four reasons to come through the door: the espresso bar, drinks worth photographing, something sweet or savory beside them, and a room that invites you to stay.</p>
-    </div>
-
-    <article class="row tall">
-      <div class="ph main wc-bleed">
-        <img data-photo-slot="gbp-3" data-photo-query="latte with latte art on wooden table" src="img/gbp-3-a3016b36.jpg" alt="A latte with latte art on a wooden table">
-      </div>
-      <div class="card wc-reveal wc-from-right wc-lift">
-        <span class="tag">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-          The daily ritual
-        </span>
-        <h3>Espresso &amp; coffee bar</h3>
-        <p>The heart of the house. Espresso pulled with care, milk poured into a proper rosetta, and a morning cup that feels like the start of something rather than a stop on the way.</p>
-      </div>
-    </article>
-
-    <article class="row flip wide">
-      <div class="ph main wc-bleed">
-        <img data-photo-slot="site-2" data-photo-query="specialty coffee drink at chateau coffee co" src="img/site-2-7c70c711.webp" alt="A specialty drink at Château Coffee Co.">
-      </div>
-      <div class="card wc-reveal wc-from-left wc-lift">
-        <span class="tag">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
-          A little ceremony
-        </span>
-        <h3>Specialty drinks</h3>
-        <p>For the days that call for more than a cappuccino. Signature creations and tasting flights, finished with the kind of detail that makes the table go quiet for a second.</p>
-      </div>
-    </article>
-
-    <article class="row mid">
-      <div class="ph main wc-bleed">
-        <img data-photo-slot="gbp-7" data-photo-query="layered cake with chocolate and pistachio" src="img/gbp-7-ce230647.jpg" alt="A slice of layered cake with chocolate and pistachio">
-      </div>
-      <div class="card wc-reveal wc-from-right wc-lift">
-        <span class="tag">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Z"/></svg>
-          From the pastry case
-        </span>
-        <h3>Pastries &amp; sweets</h3>
-        <p>A French-inflected case to match the cup: layered cakes, delicate pastries and the small indulgence that turns a coffee into an afternoon.</p>
-        <div class="inset">
-          <div class="ph">
-            <img data-photo-slot="gbp-2" data-photo-query="colorful macarons displayed on white plate" src="img/gbp-2-76e68d60.jpg" alt="Colorful macarons displayed on a white plate">
-          </div>
-          <p>Macarons, as any proper château café should have.</p>
+      <div class="wc-reveal">
+        <p class="lede">Step through the doors at Château Coffee Co. for espresso, seasonal drinks and pastries in a cozy, storybook setting. Charming, warm and never fussy.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid wc-lift" href="#visit">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+            Plan your visit
+          </a>
+          <a class="btn btn-ghost wc-lift" href="#offerings">See what we pour</a>
         </div>
       </div>
-    </article>
-
-    <article class="row flip">
-      <div class="ph main wc-bleed">
-        <img data-photo-slot="gbp-8" data-photo-query="caprese sandwich with mozzarella tomato balsamic" src="img/gbp-8-6dd76160.jpg" alt="A caprese sandwich with mozzarella, tomato and balsamic">
-      </div>
-      <div class="card wc-reveal wc-from-left wc-lift">
-        <span class="tag">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
-          Something savory
-        </span>
-        <h3>Light bites</h3>
-        <p>Lunch with the same sensibility as the coffee. A caprese with mozzarella, tomato and balsamic, or a bright bowl for something lighter.</p>
-        <div class="inset">
-          <div class="ph">
-            <img class="wc-small-photo" data-photo-slot="gbp-4" data-photo-query="acai bowl with berries granola and banana" src="img/gbp-4-d5176698.jpg" alt="An acai bowl with berries, granola and banana">
-          </div>
-          <p>Acai bowls with berries, granola and banana.</p>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <section class="room wc-bleed" id="room" aria-label="The café interior">
-    <div class="ph">
-      <div class="wc-fallback" role="img" aria-label="The Château Coffee Co. lounge with a green wall and a fireplace" style="display:flex;flex-direction:column;justify-content:flex-end;width:100%;height:100%;min-height:220px;padding:1.25rem;box-sizing:border-box;background-color:#1D1D1F;color:#F5F5F2;border-left:6px solid #F2B134"><span style="font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85">Château Coffee Co.</span></div>
     </div>
   </section>
 
-  <section class="house" aria-labelledby="room-title" style="padding-top:0">
-    <article class="row flip tall" style="margin-top:-1px">
-      <div class="ph main wc-bleed">
-        <img data-photo-slot="gbp-5" data-photo-query="coffee shop counter with menu boards and plants" src="img/gbp-5-55159595.jpg" alt="The Château Coffee Co. counter with menu boards and plants">
-      </div>
-      <div class="card wc-reveal wc-from-left wc-lift">
-        <span class="tag">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
-          The salon
-        </span>
-        <h3 id="room-title">A room to gather in</h3>
-        <p>Green walls, a fireplace, plants at the counter and seats meant for staying. Bring the study group, the first date, the Tuesday meeting, or just a book. There is a table here for each of them.</p>
-        <a class="btn btn-gold wc-lift" href="#visit" style="margin-top:.6rem">
-          Find your table
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-        </a>
-      </div>
-    </article>
-  </section>
-
-  <div class="arch-div" aria-hidden="true" style="background:var(--dom)">
-    <svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="#F5F5F2" d="M0 130V100H420V60A300 60 0 0 1 1020 60V100H1440V130Z"/></svg>
+  <!-- Signature element: the doorway address rule -->
+  <div class="doorway-line" aria-label="Location and rating">
+    <div class="wrap inner wc-reveal">
+      <span class="addr">1701 S Waverly Rd</span>
+      <span class="city">Lansing, Michigan 48917</span>
+      <span class="stars">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+        4.7 stars from 426 Google reviews
+      </span>
+    </div>
   </div>
 
-  <section class="trust" aria-labelledby="trust-title">
-    <div class="wrap trust-grid">
-      <div class="score wc-reveal wc-from-left">
-        <strong>4.7</strong>
-        <div>
-          <div class="stars" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          </div>
-          <p style="margin:.4rem 0 0;font-weight:700">from 426 reviews</p>
-        </div>
+  <section class="intro" id="about" aria-labelledby="about-title">
+    <div class="wrap intro-grid">
+      <div class="wc-reveal wc-from-left">
+        <span class="eyebrow">The Château</span>
+        <h2 id="about-title">Elevated, but always approachable</h2>
       </div>
       <div class="wc-reveal wc-from-right">
-        <h2 id="trust-title">Lansing keeps coming back</h2>
-        <p>A 4.7 across 426 reviews is not marketing. It is a neighborhood telling you, one visit at a time, that this is where the good cup and the good chair are. Come find out why.</p>
+        <p>Château Coffee Co. brings French-inspired charm to a busy Lansing road. It is the kind of place you choose on purpose instead of a chain: a cozy, photogenic room, a menu that changes with the seasons, and a loyal local following.</p>
+        <p>Neighbors, students, remote workers and families all find their corner here. Come for a quick espresso or settle in for the afternoon.</p>
       </div>
     </div>
   </section>
 
-  <section class="area wc-bleed" aria-label="Where to find us">
-    <p class="area-line wc-reveal">
-      <span>Lansing</span><i aria-hidden="true"></i><span>South Waverly Rd</span><i aria-hidden="true"></i><span>Michigan</span><i aria-hidden="true"></i><span>48917</span>
-    </p>
+  <section id="offerings" aria-labelledby="offerings-title">
+    <div class="wrap gallery-head wc-reveal">
+      <span class="eyebrow">What we pour and bake</span>
+      <h2 id="offerings-title">From the espresso bar to the pastry case</h2>
+    </div>
+
+    <article class="piece left">
+      <div class="piece-photo ratio-tall arch-right wc-bleed">
+        <img data-photo-slot="gbp-3" data-photo-query="latte with latte art in white cup" src="img/gbp-3-a3016b36.jpg" alt="A latte with latte art in a white cup">
+      </div>
+      <div class="caption wc-reveal wc-from-right">
+        <span class="tag">The espresso bar</span>
+        <h3>Espresso and coffee</h3>
+        <p>Lattes poured with care, classic espresso drinks and everyday coffee, made to be lingered over.</p>
+      </div>
+    </article>
+
+    <article class="piece right">
+      <div class="piece-photo ratio-wide arch-left wc-bleed">
+        <img data-photo-slot="seasonal" data-photo-query="seasonal specialty latte drink in cafe" src="img/seasonal-fcd5d809.webp" alt="A seasonal specialty latte drink">
+      </div>
+      <div class="caption wc-reveal wc-from-left">
+        <span class="tag">Changes with the seasons</span>
+        <h3>Seasonal specialty drinks</h3>
+        <p>A specialty menu that turns over through the year, plus coffee flights for trying a few favorites side by side.</p>
+      </div>
+    </article>
+
+    <article class="piece left">
+      <div class="piece-photo ratio-tall arch-right wc-bleed">
+        <img data-photo-slot="gbp-2" data-photo-query="colorful macarons displayed on white plate" src="img/gbp-2-76e68d60.jpg" alt="Colorful macarons displayed on a white plate">
+      </div>
+      <div class="caption wc-reveal wc-from-right">
+        <span class="tag">From the pastry case</span>
+        <h3>Pastries and sweets</h3>
+        <p>Macarons in every color and pastries that belong beside a good cup, a true patisserie touch.</p>
+      </div>
+    </article>
+
+    <article class="piece right">
+      <div class="piece-photo ratio-wide arch-left wc-bleed">
+        <img data-photo-slot="gbp-7" data-photo-query="chocolate pistachio layered cake slice" src="img/gbp-7-ce230647.jpg" alt="A slice of layered chocolate pistachio cake">
+      </div>
+      <div class="caption wc-reveal wc-from-left">
+        <span class="tag">Something to share</span>
+        <h3>Cakes by the slice</h3>
+        <p>Layered slices like chocolate pistachio for an afternoon treat, or for splitting with a friend.</p>
+      </div>
+    </article>
+
+    <article class="piece left">
+      <div class="piece-photo ratio-wide arch-right wc-bleed">
+        <img data-photo-slot="gbp-8" data-photo-query="caprese toast with mozzarella tomato balsamic" src="img/gbp-8-6dd76160.jpg" alt="Caprese toast with mozzarella, tomato and balsamic">
+      </div>
+      <div class="caption wc-reveal wc-from-right">
+        <span class="tag">Something savory</span>
+        <h3>Toasts and bowls</h3>
+        <p>Light bites to pair with your coffee, like caprese toast with mozzarella, tomato and balsamic, or a fruit-topped bowl with granola.</p>
+        <figure class="inset" style="margin-left:0;margin-right:0;margin-bottom:0">
+          <div class="inset-photo">
+            <img class="wc-small-photo" data-photo-slot="gbp-4" data-photo-query="acai bowl with granola strawberries banana" src="img/gbp-4-d5176698.jpg" alt="An acai bowl topped with granola, strawberries and banana">
+          </div>
+          <small>Acai bowl with granola, strawberries and banana</small>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <section class="band wc-bleed" aria-labelledby="room-title">
+    <div class="band-photo">
+      <img data-photo-slot="gbp-1" data-photo-query="coffee shop lounge with green walls fireplace" src="img/gbp-1-255cfea1.webp" alt="The café lounge with green walls and a fireplace">
+    </div>
+    <div class="wrap wc-reveal">
+      <span class="eyebrow">Stay a while</span>
+      <h2 id="room-title">A cozy room for gathering</h2>
+      <p>Green walls, a fireplace and plenty of seats. Bring a laptop, a book or the whole family. This is your charming little escape on the south side of town.</p>
+    </div>
   </section>
 
   <section class="visit" id="visit" aria-labelledby="visit-title">
-    <div class="wrap visit-grid">
-      <div class="wc-reveal wc-from-left">
-        <p class="kicker">Visit the château</p>
-        <h2 id="visit-title">Your table is <em>waiting.</em></h2>
-        <p class="lede">No reservation, no app, no rush. Come in off S Waverly Rd, order something lovely, and give yourself a small escape today.</p>
-        <div class="hero-actions">
-          <a class="btn btn-gold wc-lift" href="https://www.google.com/maps/search/?api=1&query=1701+S+Waverly+Rd+Lansing+MI+48917">
+    <div class="visit-grid">
+      <div class="visit-photo">
+        <img data-photo-slot="gbp-5" data-photo-query="coffee shop counter with menu boards plants" src="img/gbp-5-55159595.jpg" alt="The coffee counter with menu boards and plants">
+      </div>
+      <div class="visit-copy wc-reveal wc-from-right">
+        <span class="eyebrow">Plan your visit</span>
+        <h2 id="visit-title">Come through the château doors</h2>
+        <p>Find us on S Waverly Rd, serving the greater Lansing community. Call ahead with questions or check the current menu and hours on our website.</p>
+        <ul class="facts">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+            <span><strong>Address</strong><address style="font-style:normal">1701 S Waverly Rd, Lansing, MI 48917</address></span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+            <span><strong>Phone</strong><a href="tel:+15175804913">(517) 580-4913</a></span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+            <span><strong>Menu and hours</strong><a href="https://www.chateaucoffeeco.com">chateaucoffeeco.com</a></span>
+          </li>
+        </ul>
+        <div class="visit-actions">
+          <a class="btn btn-accent wc-lift" href="https://www.google.com/maps/search/?api=1&amp;query=Ch%C3%A2teau+Coffee+Co.+1701+S+Waverly+Rd+Lansing+MI+48917">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"/></svg>
             Get directions
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a class="btn btn-ghost wc-lift" href="tel:+15175804913">Call the café</a>
+          <a class="btn btn-ghost wc-lift" href="https://www.chateaucoffeeco.com">View the menu</a>
         </div>
       </div>
-      <ul class="facts wc-reveal wc-from-right">
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-          <div><small>Address</small><a href="https://www.google.com/maps/search/?api=1&query=1701+S+Waverly+Rd+Lansing+MI+48917">1701 S Waverly Rd, Lansing, MI 48917</a></div>
-        </li>
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
-          <div><small>Phone</small><a href="tel:+15175804913">(517) 580-4913</a></div>
-        </li>
-        <li>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
-          <div><small>Website</small><a href="https://www.chateaucoffeeco.com">chateaucoffeeco.com</a></div>
-        </li>
-      </ul>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <div class="wrap foot">
-    <span class="foot-logo">
-      <img data-photo-slot="logo" data-photo-role="logo" data-photo-query="logo" src="img/logo-3bfde306.webp" alt="Château Coffee Co. logo" style="height:48px;width:auto;object-fit:contain">
-    </span>
-    <p><strong>Château Coffee Co.</strong> · 1701 S Waverly Rd, Lansing, MI 48917 · <a href="tel:+15175804913">(517) 580-4913</a></p>
-    <p>© 2026 Château Coffee Co. · Website sample by Wild Card Creative Co</p>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="brand" href="#top" aria-label="Château Coffee Co. home">
+        <img data-photo-slot="logo" data-photo-role="logo" data-photo-query="logo" src="img/logo-3bfde306.webp" alt="Château Coffee Co. logo" style="height:48px;width:auto;object-fit:contain">
+      </a>
+      <div>
+        <p>1701 S Waverly Rd, Lansing, MI 48917</p>
+        <p><a href="tel:+15175804913">(517) 580-4913</a></p>
+      </div>
+      <div>
+        <p>4.7 stars from 426 Google reviews</p>
+        <p><a href="https://www.chateaucoffeeco.com">chateaucoffeeco.com</a></p>
+      </div>
+    </div>
+    <div class="credit">
+      <span>&copy; 2026 Château Coffee Co.</span>
+      <span>Website sample by Wild Card Creative Co</span>
+    </div>
   </div>
-<p class="wc-photo-credits wc-gbp-credit" style="font-size:.75rem;opacity:.75;margin:1rem 0 0">Photos: Château Coffee Co. on Google Business Profile.</p></footer>
+<p class="wc-photo-credits wc-gbp-credit" style="font-size:.75rem;opacity:.9;margin:1rem 0 0">Photos: Château Coffee Co. on Google Business Profile.</p></footer>
 
-<script id="wc-motion-js">/* wc-motion:2 */
+<script id="wc-motion-js">/* wc-motion:3 */
 (function(){var d=document,rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 var imgs=[].slice.call(d.querySelectorAll('img[data-photo-slot]'));
 imgs.forEach(function(im,i){var p=im.parentElement;if(!p||p===d.body)return;p.classList.add('wc-frame');im.classList.add('wc-kb');im.style.animationDelay=(-(i*3.7)%22)+'s';});
@@ -466,6 +432,7 @@ els.forEach(function(e,i){e.classList.add('wc-reveal');if(!/wc-from-/.test(e.cla
 if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('wc-in')});return;}
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.style.transitionDelay=(x.target.dataset.wcDelay||0)+'ms';x.target.classList.add('wc-in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:0.12});
 els.forEach(function(e,i){e.dataset.wcDelay=String((i%3)*90);io.observe(e)});
+function sweep(){els.forEach(function(e){if(!e.classList.contains('wc-in')&&e.getBoundingClientRect().top<innerHeight)e.classList.add('wc-in')})}setTimeout(sweep,2500);var sw;addEventListener('scroll',function(){clearTimeout(sw);sw=setTimeout(sweep,400)},{passive:true});
 var vis=new Set(),tick=false;var io2=new IntersectionObserver(function(es){es.forEach(function(x){x.isIntersecting?vis.add(x.target):vis.delete(x.target)})});imgs.forEach(function(im){io2.observe(im.parentElement)});
 function par(){tick=false;var vh=innerHeight;vis.forEach(function(f){var r=f.getBoundingClientRect();var c=(r.top+r.height/2-vh/2)/vh;var im=f.querySelector('img[data-photo-slot]');if(im)im.style.translate='0 '+(Math.max(-1,Math.min(1,c))*-22).toFixed(1)+'px';})}
 addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(par)}},{passive:true});par();})();
